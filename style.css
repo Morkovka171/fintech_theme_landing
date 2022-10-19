@@ -82,7 +82,6 @@ body {
     flex-wrap: wrap;
 }
 
-.menu_item {}
 
 .menu_item:not(:last-child) {
     margin: 0 21px 0 0;
@@ -104,8 +103,8 @@ body {
     }
 }
 
-/*---MAIN------------------------------------------------*/
-.main{
+/*---PAGE------------------------------------------------*/
+.page{
 flex: 1 1 auto;
 }
 
