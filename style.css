@@ -1,13 +1,48 @@
-.wrapper{
+.wrapper {
     min-height: 100%;
     overflow: hidden;
 }
 
-._container{
-max-width: 1046px;
-margin: 0px auto;
+/*---ШИРИНА БЛОКОВ------------------------------------------------*/
+
+._container {
+    max-width: 1046px;
+    margin: 0px auto;
 }
 
-body{
+/*---ШРИФТ------------------------------------------------*/
+
+body {
     font-family: Montserrat;
 }
+
+/*---ШАПКА------------------------------------------------*/
+
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+
+.header_container {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+    
+}
+
+._container {}
+
+.header_logo {}
+
+.header_menu {}
+
+.menu {}
+
+.menu-list {}
+
+.menu_item {}
+
+.menu-link {}
