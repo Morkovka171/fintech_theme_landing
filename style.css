@@ -27,11 +27,11 @@ body {
     box-sizing: content-box;
 }
 
-._ibg{
+._ibg {
     position: relative;
 }
 
-._ibg img{
+._ibg img {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -116,12 +116,11 @@ body {
 }
 
 /*---PAGE------------------------------------------------*/
-.page{
-flex: 1 1 auto;
+.page {
+    flex: 1 1 auto;
 }
 
-.page_main-block {
-}
+.page_main-block {}
 
 /*---MAIN_BLOCK------------------------------------------------*/
 
@@ -129,41 +128,77 @@ flex: 1 1 auto;
 .main-block {
     position: relative;
 }
-.main-block_container{
 
-}
+.main-block_container {}
+
 .main-block_body {
     padding: 184px 0 191px 0;
     position: relative;
     z-index: 2;
+    max-width: 509px;
 }
+
+.main-block_body>*:not(:last-child) {
+    margin: 0 0 35px 0;
+
+}
+
 .main-block_tittle {
+    margin: 0;
+    letter-spacing: 0.2px;
+    font-size: 58px;
+    line-height: calc(80/58*100%);
+    font-weight: 800;
 }
+
 .main-block_text {
+    color: #737373;
+    font-size: 20px;
+    line-height: 1.5;
 }
+
 .main-block_buttons {
+    display: inline-flex;
+
+
 }
+
 .main-block_button {
+    display: flex;
+    border-radius: 37px; 
+    min-height: 48px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 36px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    line-height: 150%;
 }
+
+.main-block_button_orange {
+    background-color: #FF7B47;
+    color: #FFFFFF;
+}
+
 .main-block_button_border {
+    color:#0D5C63;
+    border: 2px solid #0D5C63;
 }
-.main-block_image{
+
+.main-block_image {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
-    left: 0; 
+    left: 0;
 }
 
-.main-block_image img{
-    object-position:bottom ;
-}
+.main-block_image img {}
 
 
 
 
 
 /*---ПОДВАЛ------------------------------------------------*/
-.footer{
-
-}
+.footer {}
