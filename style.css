@@ -163,8 +163,13 @@ body {
 
 .page_advantages {
 }
+
 .page_practice {
 }
+
+.page_whoweare {
+}
+
 /*---HEADER-BLOCK-------------------------------------------*/
 
 .header-block {
@@ -586,4 +591,91 @@ margin: 0 0 15px 0;
 .item-practice_image {
     display: block;
     padding: 0px 0px 60% 0px;
+}
+
+/*-----WHOWEARE-----------------------------------------*/
+
+
+.whoweare {
+    padding: 80px 0 130px 0;
+}
+.whoweare_container {
+}
+
+.whoweare_header {
+    margin: 0 0 100px 0;
+}
+
+.whoweare_body {
+    display: flex;
+}
+.whoweare_video {
+    position: relative;
+    flex: 0 0 57%;
+    padding: 0 0 42.25% 0;
+}
+
+.whoweare_video iframe{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+}
+
+.whoweare_content {
+    flex: 1 1 auto;
+    padding: 0 0 0 121px;
+}
+.whoweare_tittle {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+}
+
+.whoweare_tittle:not(:last-child){
+    margin: 0 0 10px 0;
+}
+
+.whoweare_text {
+color: #737373;
+font-size: 14px;
+font-weight: 500;
+line-height: 142%;
+letter-spacing: 0.2px;
+}
+
+.whoweare_top:not(:last-child){
+margin: 0 0 50px 0;
+}
+
+.whoweare_items {
+
+}
+.whoweare_item {
+}
+.item-whoweare {
+    display: flex;
+}
+.item-whoweare_icon {
+    flex:0 0 32px;
+}
+.item-whoweare_body {
+    flex: 1 1 auto;
+    padding: 0 0 20px 0;
+}
+.item-whoweare_tittle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.item-whoweare_tittle:not(:last-child){
+padding: 0 0 5px 0;
+}
+
+.item-whoweare_text {
 }
