@@ -185,17 +185,32 @@ body {
 
 .header-block {
     text-align: center;
-   
     letter-spacing: 0.2px;
-    
 }
+
 .header-block_tittle {
 font-size: 40px;
-line-height: 142%;
 font-weight: 700;
+line-height: 142%;
+
 }
+.header-block_tittle:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+
 .header-block_sub-tittle {
 color: #737373;
+line-height: 142%;
+}
+@media(max-width: 992px){
+    .header-block_tittle{
+        font-size: 35px;
+    } 
+}
+@media(max-width: 767px){
+    .header-block_tittle{
+        font-size: 30px;
+    } 
 }
 
 /*---ПОДВАЛ------------------------------------------------*/
@@ -327,7 +342,9 @@ color: #737373;
 
 
 
-.services {}
+.services {
+   
+}
 
 .services_container {}
 
@@ -417,21 +434,74 @@ color: #737373;
 
 
 .advantages {
+    padding: 80px 0;
+    
 }
+
+@media(max-width: 992px){
+    .advantages{
+padding: 50px 0 ;
+    }
+    }
+
+    @media(max-width: 767px){
+        .advantages{
+    padding: 30px 0 ;
+        }
+        }
 .advantages_container {
 }
 .advantages_header {
+    margin: 0 0 50px 0;
 }
 
 .advantages_body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px -30px;
 }
 .advantages_column {
+    padding: 0 15px;
+    flex: 0 1 25%;
+    margin: 0 0 30px 0;
 }
+
+@media(max-width: 1020px){
+.advantages_column{
+    flex: 0 1 50%;
+}
+}
+
+@media(max-width: 560px){
+    .advantages_column{
+        flex: 0 1 100%;
+    }
+    }
+
 .advantages_item {
+    background-color: #FFFFFF ;
+    padding: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+.advantages_item>*:not(:last-child){
+    margin: 0 0 10px 0 ;
 }
 .advantages_icon {
+    height: 48px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 .advantages_value {
+    font-size: 40px;
+    line-height: 142%;
+    
 }
 .advantages_text {
+    
+    font-size: 16px;
+    line-height: 150%;
+    color:#737373;
+    letter-spacing: 0.1px;
 }
