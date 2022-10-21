@@ -180,7 +180,8 @@ body {
 
 .page_advantages {
 }
-
+.page_practice {
+}
 /*---HEADER-BLOCK-------------------------------------------*/
 
 .header-block {
@@ -446,7 +447,7 @@ padding: 50px 0 ;
 
     @media(max-width: 767px){
         .advantages{
-    padding: 30px 0 ;
+    padding: 40px 0 ;
         }
         }
 .advantages_container {
@@ -454,7 +455,11 @@ padding: 50px 0 ;
 .advantages_header {
     margin: 0 0 50px 0;
 }
-
+@media(max-width: 767px){
+    .advantages_header {
+        margin: 0 0 25px 0;
+    }
+}
 .advantages_body {
     display: flex;
     flex-wrap: wrap;
@@ -504,4 +509,60 @@ padding: 50px 0 ;
     line-height: 150%;
     color:#737373;
     letter-spacing: 0.1px;
+}
+
+/*-----PRACTICE-----------------------------------------*/
+
+
+.practice { 
+    padding: 125px 0 80px 0;
+}
+.practice_container {
+}
+.practice_header {
+    margin: 0 0 45px 0;
+}
+
+.practice_body {
+    margin: 0 0 -15px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.practice_column {
+    padding: 0 15px;
+    flex: 0 1 25%;
+}
+.practice_item {
+    
+}
+.item-practice {
+    background-color: #FFFFFF;
+}
+.item-practice_content{
+    padding: 30px;   
+}
+.item-practice_link {
+    color: inherit;
+    display: inline-block;
+}
+.item-practice_link:hover{
+    text-decoration: underline;
+}
+.item-practice_link:not(:last-child){
+margin: 0 0 15px 0;
+}
+
+.item-practice_tittle {
+    letter-spacing: 0.1px;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+}
+.item-practice_text {
+    color: #737373;
+    line-height: 142%;
+}
+.item-practice_image {
+    display: block;
+    padding: 0 0 69% 0;
 }
