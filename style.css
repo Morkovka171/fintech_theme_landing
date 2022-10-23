@@ -1106,13 +1106,22 @@ body {
   margin: 0px 0px 12px 0px;
 }
 .contacts-footer_item_phone {
-  background: url('image/footer/icons/1.svg') 0 0 no-repeat;
+  background-image: url(image/footer/icons/1.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  /* background: url('image/footer/icons/1.svg') 0 0 no-repeat; */
 }
 .contacts-footer_item_map {
-  background: url('image/footer/icons/2.svg') 0 0 no-repeat;
+  background-image: url(image/footer/icons/2.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  /* background: url('image/footer/icons/2.svg') 0 0 no-repeat; */
 }
 .contacts-footer_item_email {
-  background: url('image/footer/icons/3.svg') 0 0 no-repeat;
+  background-image: url(image/footer/icons/3.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  /* background: url('image/footer/icons/3.svg') 0 0 no-repeat; */
 }
 .footer_bottom {
   padding: 25px 0;
