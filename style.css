@@ -174,6 +174,8 @@ body {
 .page_subscribe:not(:last-child) {
   margin: 0px 0px 10px 0px;
 }
+.page_getintouch {
+}
 
 /*?---HEADER-BLOCK-------------------------------------------*/
 
@@ -759,14 +761,14 @@ body {
   position: relative;
   padding: 0px 0px 20px 0px;
 }
-.subscribe::before{
+.subscribe::before {
   content: "";
-  background:#252B42;
+  background: #252b42;
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 77px;
-  left:0;
+  left: 0;
 }
 .subscribe_container {
 }
@@ -792,7 +794,7 @@ body {
   color: #ffffff;
 }
 @media (max-width: 810px) {
-  .subscribe_tittle{
+  .subscribe_tittle {
     margin: 0px 0px 20px 0px;
   }
   .subscribe_body {
@@ -802,13 +804,13 @@ body {
 }
 
 @media (min-width: 810px) {
-  .subscribe_tittle{
+  .subscribe_tittle {
     max-width: 266px;
   }
-  .subscribe_body{
+  .subscribe_body {
     display: flex;
     justify-content: space-between;
-  } 
+  }
 }
 .subscribe_form {
   flex: 0 1 50%;
@@ -827,8 +829,8 @@ body {
   color: #737373;
   border-right: 0;
 }
-.subscribe_input:focus{
-  color:black
+.subscribe_input:focus {
+  color: black;
 }
 .subscribe_button {
   background: #ff7b47;
@@ -846,8 +848,92 @@ body {
 @media (max-width: 810px) {
   .subscribe_button {
     padding: 0 15px;
+  }
+  .subscribe_input {
+    padding: 0 15px;
+  }
 }
-.subscribe_input {
-  padding: 0 15px;
+/*?-----GETINTOUCH-----------------------------------------*/
+
+.getintouch {
+  padding: 80px 0px 135px 0px;
 }
+.getintouch__container {
 }
+.getintouch_header {
+  margin: 0px 0px 80px 0px;
+}
+.getintouch_items {
+  display: flex;
+  align-items: center;
+}
+.getintouch_item {
+  flex: 0 1 33.333%;
+}
+.item-getintouch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 50px 15px;
+}
+.item-getintouch_icon {
+}
+.item-getintouch > *:not(:last-child) {
+  margin: 0px 0px 15px 0px;
+}
+
+.item-getintouch_emails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item-getintouch_email {
+  color: inherit;
+  font-weight: 600;
+  line-height: 150%;
+  font-size: 16px;
+}
+.item-getintouch_email:hover {
+  text-decoration: underline;
+}
+
+.item-getintouch_label {
+font-size: 16px;
+font-weight: 700;
+line-height: 150%;
+letter-spacing: 0.1px;
+}
+.item-getintouch_button {
+  border: 1px solid #ff7b47;
+  border-radius: 5px;
+  min-height: 44px;
+  display: flex;
+  color: #ff7b47;
+  line-height: 142%;
+  padding: 5px 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.3s ease 0s;
+}
+.item-getintouch_button:hover{
+  background-color: #ff7b47;
+  color: #ffffff;
+}
+.item-getintouch_active{
+  background: #252B42;
+  color:#ffffff;
+  padding: 80px 15px;
+  }
+  .item-getintouch_active .item-getintouch_button{
+    border: 1px solid #ffffff;
+    color: #ffffff;
+  }
+  .item-getintouch_active .item-getintouch_button:hover{
+    background-color: #ffffff;
+    color: #252B42;
+  }
