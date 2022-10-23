@@ -731,7 +731,7 @@ body {
 
 @media (max-width: 767px) {
   .clients {
-    padding: 30px 0 0px 0;
+    padding: 30px 0px;
   }
 }
 .clients_container {
@@ -773,21 +773,42 @@ body {
 .subscribe_body {
   position: relative;
   z-index: 2;
-  margin: 0 30px;
-  display: flex;
   padding: 30px 50px;
   align-items: center;
   background-color: #17213c;
   border-radius: 2px;
-  justify-content: space-between;
 }
+@media (min-width: 1070px) {
+  .subscribe_body {
+    margin: 0 30px;
+  }
+}
+
 .subscribe_tittle {
   font-size: 24px;
   font-weight: 700;
   line-height: 133%;
   letter-spacing: 0.1px;
   color: #ffffff;
-  max-width: 266px;
+}
+@media (max-width: 810px) {
+  .subscribe_tittle{
+    margin: 0px 0px 20px 0px;
+  }
+  .subscribe_body {
+    margin: 0 -15px;
+    padding: 20px 15px;
+  }
+}
+
+@media (min-width: 810px) {
+  .subscribe_tittle{
+    max-width: 266px;
+  }
+  .subscribe_body{
+    display: flex;
+    justify-content: space-between;
+  } 
 }
 .subscribe_form {
   flex: 0 1 50%;
@@ -795,6 +816,7 @@ body {
   align-items: center;
 }
 .subscribe_input {
+  width: 100%;
   flex: 1 1 auto;
   min-height: 58px;
   padding: 0 20px;
@@ -819,4 +841,13 @@ body {
   align-items: center;
   text-align: center;
   padding: 0 22px;
+}
+
+@media (max-width: 810px) {
+  .subscribe_button {
+    padding: 0 15px;
+}
+.subscribe_input {
+  padding: 0 15px;
+}
 }
